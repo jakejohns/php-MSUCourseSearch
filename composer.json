@@ -11,7 +11,10 @@
     }],
 
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.3.0",
+        "zendframework/zend-dom": "2.3.*@dev",
+        "zendframework/zend-filter": "2.3.*@dev",
+        "nategood/httpful": "*"
     },
 
     "autoload": {

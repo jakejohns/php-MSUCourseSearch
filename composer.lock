@@ -1,0 +1,222 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "fff72bbff0ddc30074c7edaf0f4c183c",
+    "packages": [
+        {
+            "name": "nategood/httpful",
+            "version": "0.2.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nategood/httpful.git",
+                "reference": "150bfb53f6e4b78e8152e0a9ccc227bb0e3daf62"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nategood/httpful/zipball/150bfb53f6e4b78e8152e0a9ccc227bb0e3daf62",
+                "reference": "150bfb53f6e4b78e8152e0a9ccc227bb0e3daf62",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Httpful": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nate Good",
+                    "email": "me@nategood.com",
+                    "homepage": "http://nategood.com"
+                }
+            ],
+            "description": "A Readable, Chainable, REST friendly, PHP HTTP Client",
+            "homepage": "http://github.com/nategood/httpful",
+            "keywords": [
+                "api",
+                "curl",
+                "http",
+                "requests",
+                "rest",
+                "restful"
+            ],
+            "time": "2014-07-19 15:28:59"
+        },
+        {
+            "name": "zendframework/zend-dom",
+            "version": "dev-develop",
+            "target-dir": "Zend/Dom",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/Component_ZendDom.git",
+                "reference": "f3a46bb4dd685e25466af0f5e3ecf99fcfa8cda5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/Component_ZendDom/zipball/f3a46bb4dd685e25466af0f5e3ecf99fcfa8cda5",
+                "reference": "f3a46bb4dd685e25466af0f5e3ecf99fcfa8cda5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev",
+                    "dev-develop": "2.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Zend\\Dom\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "provides tools for working with DOM documents and structures",
+            "keywords": [
+                "dom",
+                "zf2"
+            ],
+            "time": "2014-02-26 19:00:11"
+        },
+        {
+            "name": "zendframework/zend-filter",
+            "version": "2.3.1",
+            "target-dir": "Zend/Filter",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/Component_ZendFilter.git",
+                "reference": "1889b7aa499beccadac770780a73e1a40e0f8a53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/Component_ZendFilter/zipball/1889b7aa499beccadac770780a73e1a40e0f8a53",
+                "reference": "1889b7aa499beccadac770780a73e1a40e0f8a53",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.23",
+                "zendframework/zend-stdlib": "self.version"
+            },
+            "require-dev": {
+                "zendframework/zend-crypt": "self.version",
+                "zendframework/zend-servicemanager": "self.version",
+                "zendframework/zend-uri": "self.version"
+            },
+            "suggest": {
+                "zendframework/zend-crypt": "Zend\\Crypt component",
+                "zendframework/zend-i18n": "Zend\\I18n component",
+                "zendframework/zend-servicemanager": "Zend\\ServiceManager component",
+                "zendframework/zend-uri": "Zend\\Uri component for UriNormalize filter"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev",
+                    "dev-develop": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Zend\\Filter\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "provides a set of commonly needed data filters",
+            "keywords": [
+                "filter",
+                "zf2"
+            ],
+            "time": "2014-04-15 15:28:47"
+        },
+        {
+            "name": "zendframework/zend-stdlib",
+            "version": "2.3.1",
+            "target-dir": "Zend/Stdlib",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/Component_ZendStdlib.git",
+                "reference": "c1f4830018b5d4f034d32fa01a9e17ea176f56f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/Component_ZendStdlib/zipball/c1f4830018b5d4f034d32fa01a9e17ea176f56f6",
+                "reference": "c1f4830018b5d4f034d32fa01a9e17ea176f56f6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.23"
+            },
+            "require-dev": {
+                "zendframework/zend-eventmanager": "self.version",
+                "zendframework/zend-serializer": "self.version",
+                "zendframework/zend-servicemanager": "self.version"
+            },
+            "suggest": {
+                "zendframework/zend-eventmanager": "To support aggregate hydrator usage",
+                "zendframework/zend-serializer": "Zend\\Serializer component",
+                "zendframework/zend-servicemanager": "To support hydrator plugin manager usage"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev",
+                    "dev-develop": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Zend\\Stdlib\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "keywords": [
+                "stdlib",
+                "zf2"
+            ],
+            "time": "2014-04-15 15:28:48"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "zendframework/zend-dom": 20,
+        "zendframework/zend-filter": 20
+    },
+    "prefer-stable": false,
+    "platform": {
+        "php": ">=5.3.0"
+    },
+    "platform-dev": [
+
+    ]
+}

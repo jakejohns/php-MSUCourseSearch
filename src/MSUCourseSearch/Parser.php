@@ -306,7 +306,7 @@ class Parser
                 $course['sectionTitle'] = $title[1];
             }
 
-            if ($course['sectionTitle']) {
+            if (isset($course['sectionTitle'])) {
                 $descParts = explode($course['sectionTitle'], $course['rawEntry']);
                 $course['description'] = trim(
                     $this->trim(

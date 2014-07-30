@@ -40,6 +40,9 @@ namespace MSUCourseSearch;
  */
 class Course
 {
+    const STATUS_OPEN = 'open';
+    const STATUS_CLOSED = 'closed';
+    const STATUS_RESTRICTED = 'restricted';
 
     /**
      * _action

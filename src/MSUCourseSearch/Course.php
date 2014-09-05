@@ -44,13 +44,6 @@ class Course
     const STATUS_CLOSED = 'closed';
     const STATUS_RESTRICTED = 'restricted';
 
-    /**
-     * uid
-     *
-     * @var mixed
-     * @access public
-     */
-    public $uid;
 
     /**
      * _action

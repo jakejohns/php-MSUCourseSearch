@@ -94,6 +94,14 @@ class Course
     public $uid;
 
     /**
+     * uuid
+     *
+     * @var string
+     * @access public
+     */
+    public $uuid;
+
+    /**
      * _courseNumber
      *
      * @var int
@@ -108,6 +116,14 @@ class Course
      * @access public
      */
     public $courseTitle;
+
+    /**
+     * semester
+     *
+     * @var string
+     * @access public
+     */
+    public $semester;
 
     /**
      * _courseId
@@ -281,6 +297,12 @@ class Course
             '%s_%s',
             $this->courseType,
             $this->section
+        );
+
+        $this->uuid = sprintf(
+            '%s_%s',
+            str_replace(' ', '-', $this->semester),
+            $this->uid
         );
     }
 }

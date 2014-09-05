@@ -113,9 +113,13 @@ class Parser
         return function ($body) {
             $courses = array();
             $dom = new DomQuery($body);
+            $semester  = $dom->execute('.result_heading .text_med')
+                ->current()
+                ->nodeValue;
             $tableRows  = $dom->execute('table[summary="subject"] tr');
             foreach ($tableRows as $row) {
-                if ($course = $this->parseRow($row) ) {
+                if ($course = $this->parseRow($row)) {
+                    $course['semester'] = $semester;
                     $courses[] = new Course($course);
                 }
             }

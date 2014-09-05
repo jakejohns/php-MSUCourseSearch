@@ -45,6 +45,14 @@ class Course
     const STATUS_RESTRICTED = 'restricted';
 
     /**
+     * uid
+     *
+     * @var mixed
+     * @access public
+     */
+    public $uid;
+
+    /**
      * _action
      *
      * @var mixed
@@ -75,6 +83,22 @@ class Course
      * @access public
      */
     public $subject;
+
+    /**
+     * courseType
+     *
+     * @var string
+     * @access public
+     */
+    public $courseType;
+
+    /**
+     * uid
+     *
+     * @var mixed
+     * @access public
+     */
+    public $uid;
 
     /**
      * _courseNumber
@@ -253,6 +277,18 @@ class Course
                 $this->$key = $value;
             }
         }
+
+        $this->courseType = sprintf(
+            '%s%s',
+            $this->subject,
+            $this->courseNumber
+        );
+
+        $this->uid = sprintf(
+            '%s_%s',
+            $this->courseType,
+            $this->section
+        );
     }
 }
 

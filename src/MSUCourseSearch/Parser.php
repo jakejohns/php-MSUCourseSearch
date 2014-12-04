@@ -116,7 +116,8 @@ class Parser
             $semester  = $dom->execute('.result_heading .text_med')
                 ->current()
                 ->nodeValue;
-            $tableRows  = $dom->execute('table[summary="subject"] tr');
+            // $tableRows  = $dom->execute('table[summary="subject"] tr');
+            $tableRows  = $dom->execute('//*[@id="content"]/table[3]/tr');
             foreach ($tableRows as $row) {
                 if ($course = $this->parseRow($row)) {
                     $course['semester'] = $semester;

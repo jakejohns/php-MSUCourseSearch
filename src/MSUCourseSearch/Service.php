@@ -49,8 +49,8 @@ use Httpful\Mime;
 class Service implements ServiceInterface
 {
 
-    const SEMESTER_URI = 'http://schedule.msu.edu/default.asp';
-    const QUERY_URI = 'http://schedule.msu.edu/searchResults.asp';
+    const SEMESTER_URI = 'https://schedule.msu.edu/default.asp';
+    const QUERY_URI = 'https://schedule.msu.edu/searchResults.asp';
 
     protected $semesterCodes = null;
 

@@ -90,7 +90,7 @@ class Parser
         return function ($body) {
             $dom = new DomQuery($body);
             $data = array();
-            foreach ($dom->execute('#Semester option') as $option) {
+            foreach ($dom->execute('#MainContent_ddlTerm option') as $option) {
                 $txt = explode(' ', $option->textContent);
                 $code = trim($option->getAttribute('value'));
                 $key = preg_replace('/\D/', '', $txt[1]);
